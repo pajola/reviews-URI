@@ -6,8 +6,8 @@ Official repository for the paper "A Novel Review Helpfulness Measure based on t
 Once you download the Amazon Core dataset (see instructions inside the Dataset folder), you can replicate our resuts as follows.
 
 You can skip steps (1) and (2) by downloading our extracted features. 
-Download the resources from: 
-
+Download the resources from: https://forms.gle/imWLi2z63sbgqXU78
+Plance both *LIWC* and *Dataset* folders in the main directory. 
 
 
 ### (1) Unzip the datasets
