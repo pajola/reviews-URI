@@ -9,6 +9,9 @@ You can skip steps (1) and (2) by downloading our extracted features.
 Download the resources from: https://forms.gle/imWLi2z63sbgqXU78
 Plance both *LIWC* and *Dataset* folders in the main directory. 
 
+## Prerequisites
+We provide you a *environment.yml* containing python libraries required to fully run our experiments. 
+
 
 ### (1) Unzip the datasets
 For instance, suppose you aim training a model over *Toys_and_Games* dataset. 
@@ -29,14 +32,15 @@ Do you have an unexpected inerruption of your code?
 That's not a problem! Our script incrementally save the extracted features: therefore, you just need to restart and it will automatically resume. 
 Inside the script you can further tune the number of cores, based on your machine capabilities. 
 
-### (3) It's time for training
+### (3) It's time for training and testing
 We experimented we many models. 
 With the following script, you automatically trains a set of naive models (e.g., Logistic Regression, Random Forest). 
 
-    python train.py -d Toys_and_Games --m lr -c 8
+    python train.py -d Toys_and_Games -c 8
 
 For instance, the previous instruction trains a Logistic Regression over the Toys_and_Games dataset, using 8 cores (to speed up the execution). 
+You can obtain the performance of the models by using:
 
-
+    python test.py -d Toys_and_Games
 
 
